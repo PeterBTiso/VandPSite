@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - -R wp-admin $DEPLOYPATH
+    - -R wp-content $DEPLOYPATH
+    - -R wp-includes $DEPLOYPATH
+    - *.php $DEPLOYPATH
+    - *.txt $DEPLOYPATH
+    - *.html $DEPLOYPATH
